@@ -18,7 +18,7 @@ class _ChatbotState extends State<Chatbot> {
   ChatUser gemini = ChatUser(id: '2', firstName: 'Gemini');
 
   final targetURL =
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyDmkcO9mHjejFFWNPSx5sXYSuQZApcc5tU';
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={YOUR OWN API KEY HERE}';
   final headers = {'Content-Type': 'application/json'};
 
   List<ChatMessage> allMessages = [];
@@ -73,7 +73,7 @@ class _ChatbotState extends State<Chatbot> {
         ],
       };
       const apiUrl =
-          'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro-vision-latest:generateContent?key=AIzaSyDmkcO9mHjejFFWNPSx5sXYSuQZApcc5tU';
+          'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro-vision-latest:generateContent?key={YOUR OWN API KEY}';
 
       await http
           .post(
