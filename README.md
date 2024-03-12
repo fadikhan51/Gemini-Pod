@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <body>
+  <h1>DEMO</h1>
+<video width="350" height="auto" controls>
+  <source src="demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 <h1>GEMINI POD - Google Gemini API</h1>
 
 <p>Embark on a conversational journey with our innovative chatbot powered by the Google Gemini API. This cutting-edge chatbot, inspired by Chat GPT, goes beyond words by accepting images as input and providing insightful responses. Dive into a world where every query matters, and every interaction leaves an impression.</p>
