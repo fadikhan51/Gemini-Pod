@@ -90,9 +90,11 @@ class _ChatbotState extends State<Chatbot> {
             ChatMessage(user: gemini, createdAt: DateTime.now(), text: resText),
           );
         } else {
+          print(response.body);
+          var result = jsonDecode(response.body);
           var resText =
               'Sorry the request could not be completed successfully : (\n'
-              'Response status : ${response.statusCode}';
+              'Message : ${result['error']['message']}';
           allMessages.insert(
             0,
             ChatMessage(user: gemini, createdAt: DateTime.now(), text: resText),
